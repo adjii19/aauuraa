@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURAA🔥</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.0.0/tsparticles.min.js"></script>
+</head>
+<style>
+        #tsparticles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        button {
+            position: relative;
+            z-index: 1;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+    }
+
+</style>
+<body style="background: url(vector-cute-strawberry-pattern-pastel-background_53876-169509.jpg); background-size: cover; background-position: center;"
+    class="flex justify-center h-screen items-center">
+
+    <div class="bg-white border px-10 py-8 border-4 border-red-300 shadow-lg shadow-pink-300 rounded-xl text-center animate__animated animate__backInDown m-8 w-80"
+        id="kartu">
+
+        <h1 class="text-2xl">haii gemeess</h1>
+        <h1 class="text-2xl text-red-500 font-bold text-center animate__animated animate__pulse animate__infinite">AURAAA🔥</h1>
+        <h2 class="text-1xl">ohh yaa</h2>
+        <button class="p-2 bg-pink-200 text-white rounded mt-5 hover:bg-pink-400 transition ease-in w-full animate__animated animate__delay-1s animate__tada" onclick="pindah()">
+            CLICK SINI !!
+        </button>
+
+    </div>
+    
+<script>
+    function startParticles() {
+const defaults = {
+    spread: 360,
+    ticks: 100,
+    gravity: 0,
+    decay: 0.94,
+    startVelocity: 30,
+  };
+  
+  function shoot() {
+    confetti({
+      ...defaults,
+      particleCount: 30,
+      scalar: 1.2,
+      shapes: ["circle", "square"],
+      colors: ["#a864fd", "#29cdff", "#78ff44", "#ff718d", "#fdff6a"],
+    });
+  
+    confetti({
+      ...defaults,
+      particleCount: 20,
+      scalar: 2,
+      shapes: ["emoji"],
+      shapeOptions: {
+        emoji: {
+          value: ["🦄", "🌈", "❤️", "😆", "🥰", "🩷", "😍", "🔥"],
+        },
+      },
+    });
+  }
+  
+  setTimeout(shoot, 0);
+  setTimeout(shoot, 300);
+  setTimeout(shoot, 500);
+}
+  </script>
+    
+    
+    <script>
+        let kartu = document.getElementById("kartu");
+
+        function pindah() {
+            kartu.innerHTML = ` 
+                <h1 class="font-semibold text-wrap w-full animate__animated animate__zoomIn">
+                   aku cuma mau bilangg kaloo auraa ituu cantiik gemesinn lucuu jugaa xixixii ily auu❤️❤️
+                </h1>
+                <button class="p-2 bg-pink-200 text-white rounded mt-5 hover:bg-pink-600 transition ease-in w-full animate__animated animate__tada" onclick="startParticles()">
+                    🔥
+                </button>
+                <div id="tsparticles"></div>
+            `;
+        }
+    
+        
+    </script>
+    
+</body>
+
+</html>
